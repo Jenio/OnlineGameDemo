@@ -1,0 +1,23 @@
+{
+	"game": {
+		"name": "杰尼克",
+		"appid": "664182303",
+		"cid": "0"
+	},
+	"configs": [
+		{
+			"appid": "664182303",
+			"services": [
+				{
+					"service_id": "269",
+					"enable": true
+				},
+				{
+					"service_id": "303",
+					"enable": false
+				}
+			]
+		}
+	],
+	"needExecNative": true
+}
