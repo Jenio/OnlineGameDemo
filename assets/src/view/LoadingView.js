@@ -35,16 +35,18 @@ cc.Class({
 
 
     roomInit() {
-        gf.Online.init(
-            () => {
-                console.log('user in room', this);
-                gf.View.open('RoomView').then(this.close.bind(this));
-            },
-            () => {
-                console.log('user in lobby', this);
-                gf.View.open('MatchView').then(this.close.bind(this));
-            }
-        );
+        // gf.Online.init(
+        //     () => {
+        //         console.log('user in room', this);
+        //         gf.View.open('RoomView').then(this.close.bind(this));
+        //     },
+        //     () => {
+        //         console.log('user in lobby', this);
+        //         gf.View.open('MatchView').then(this.close.bind(this));
+        //     }
+        // );
+
+        gf.View.open('SelectLevelView');
     },
 
     start() {
