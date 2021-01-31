@@ -6,38 +6,28 @@
  * 
  */
 
-//----------------------------定义----------------------
-// 节点zIndex 类型
-let eZIndexType;
-let eSysEventType;
-
-
 
 
 
 
 //----------------------------实现----------------------
-eZIndexType = cc.Enum({
-    BACKGROUND: 100,
-    SCENE: 200,
-    FRONTGROUND: 300,
-    VIEW: 400,
-    FUNCTION: 500,
-    DIALOG: 600,
-    TIPS: 700,
-    WAIT: 800,
-    SYSTEM: 900,
-})
+class GFEnum {
 
-eSysEventType = cc.Enum({
-    VIEW_CLOSE: 'system_event_view_close'
-})
-let GFEnum = cc.Class({
+    eZIndexType = cc.Enum({
+        BACKGROUND: 100,
+        SCENE: 200,
+        FRONTGROUND: 300,
+        VIEW: 400,
+        FUNCTION: 500,
+        DIALOG: 600,
+        TIPS: 700,
+        WAIT: 800,
+        SYSTEM: 900,
+    })
 
-    ctor() {
-        this.eZIndexType = eZIndexType;
-        this.eSysEventType = eSysEventType;
-    },
-})
+    eSysEventType = cc.Enum({
+        VIEW_CLOSE: 'system_event_view_close'
+    })
 
+}
 gf.Enum = module.exports = new GFEnum();

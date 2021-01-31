@@ -62,5 +62,12 @@ let GFList = cc.Class({
         }
         return remove;
     },
+
+    foreach(callback) {
+        for (let i = 0; i < this._content.length; ++i) {
+            let temp = this._content[i];
+            callback(temp);
+        }
+    }
 });
 gf.List = module.exports = GFList;

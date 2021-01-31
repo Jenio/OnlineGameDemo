@@ -14,3 +14,4 @@ require('control/GFSocketControl');
 require('control/GFViewControl');
 require('control/GFAdvertControl');
 require('control/MGOBEControl');
+require('control/GFEventControl');

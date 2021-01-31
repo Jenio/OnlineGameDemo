@@ -6,7 +6,11 @@ cc.Class({
     },
 
     onLoad() {
-        this.scheduleOnce(this.nextScene, 2);
+        let delayTime = 2;
+        if (!cc.sys.isNative) {
+            delayTime = 0;
+        }
+        this.scheduleOnce(this.nextScene, delayTime);
     },
 
     nextScene: function () {

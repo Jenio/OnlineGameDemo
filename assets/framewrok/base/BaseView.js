@@ -13,10 +13,12 @@ let GFBaseView = cc.Class({
         _isOpen: false,
     },
 
-    // LIFE-CYCLE CALLBACKS:
-
+    ctor() {
+        this
+        this.node
+    },
     onLoad() {
-        this.node.on(gf.Enum.eSysEventType, this.onSystemCloseView, this);
+        this.node.on(gf.Enum.eSysEventType.VIEW_CLOSE, this.onSystemCloseView, this);
     },
 
     playOpeningEffect() {

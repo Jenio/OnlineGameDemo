@@ -11,8 +11,8 @@ cc.Class({
         this.node.on('touchend', this.onClick, this);
     },
 
-    onClick() {
-        let event = new cc.Event(gf.Enum.eSysEventType, true);
+    onClick(e) {
+        let event = new cc.Event.EventCustom(gf.Enum.eSysEventType.VIEW_CLOSE, true);
         this.node.dispatchEvent(event);
     },
     // update (dt) {},

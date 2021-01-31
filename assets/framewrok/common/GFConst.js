@@ -11,6 +11,8 @@ let GFConst = cc.Class({
 
     properties : {
         Version: '1.0.0',
+        CubicNodeWidth: 0,
+        CubicNodeHeight: 0,
     },
 })
 

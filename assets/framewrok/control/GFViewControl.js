@@ -43,8 +43,8 @@ let GFViewControl = cc.Class({
         }
 
         if (typeof node === 'string') {
-            let nodes = _openingViewReference.clear((node) => {
-                return node.path === node;
+            let nodes = _openingViewReference.clear((element) => {
+                return element.path === node;
             });
             for (let i = 0; i < nodes.length; ++i) {
                 let temp = nodes[i];
